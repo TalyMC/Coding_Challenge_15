@@ -1,3 +1,7 @@
+//Task 1
+let riskManDashboard = document.getElementById('riskManDashboard')
+    console.log("Risk Dashboard Loaded")
+
 //Task 2 - Adding Risk Items.
 function addRiskItem(riskName, riskLevel, department) {
     // Create a new risk card
