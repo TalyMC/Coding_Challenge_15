@@ -22,12 +22,13 @@ function addRiskItem(riskName, riskLevel, department) {
         <button class= "resolve-button">Resolve</button>
     `;
 
-    //Task 3 - Removing Risk Items-----------------------------------------------------
+    //Task 3 - Removing Risk Items / Task 6 ---------------------------------------------
     const resolveButton = riskCard.querySelector('.resolve-button');
-    resolveButton.addEventListener('click',() =>{
+    resolveButton.addEventListener('click',(event) =>{
+        event.stopPropagation();
         riskCard.remove()
     });
-    //End of Task 3---------------------------------------------------------------------
+    //End of Task 3 / Task 6---------------------------------------------------------------
     
      //Append
      document.getElementById('riskDashboard').appendChild(riskCard);
